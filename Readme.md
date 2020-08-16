@@ -8,17 +8,17 @@ Escrever uma aplicação usando React e as bibliotecas da sua escolha, para cons
 
 # Bibliotecas e Hooks utilizadas:
 
--[x] Styled Component
+- [x] Styled Component
 
--[x] Axios
+- [x] Axios
 
--[x] Moment
+- [x] Moment
 
 ## Hooks
 
--[x]  UseEffet
+- [x]  UseEffet
 
--[x] USeState
+- [x] USeState
 
 # Tecnologia utilizadas:
 
