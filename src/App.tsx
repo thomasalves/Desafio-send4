@@ -11,15 +11,13 @@ function App() {
     const now= moment().format('LTS')
     //console.log( now)
 
-    const [ location, setLocation ] = useState(false);
 
     useEffect(() => {
     navigator.geolocation.getCurrentPosition((position) => {
         const  latitude = position.coords.latitude;
         const  longitude = position.coords.longitude
         //console.log( latitude , longitude)
-        setLocation(true)
-        axios.get(`https://api.sunrise-sunset.org/json?lat=${latitude}&lng=${position.coords.longitude}%date=today`)
+        axios.get(`https://api.sunrise-sunset.org/json?lat=${latitude}&lng=${longitude}%date=today`)
         .then(response => {
         const local = response.data
         const sunrise = moment(local.results.sunrise, "hh:mm:ss A")
